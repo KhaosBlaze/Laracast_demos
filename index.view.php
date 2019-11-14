@@ -8,16 +8,7 @@
 
 <body>
 
-  <?php foreach($tasks as $task) : ?>
-    <li>
-      <?php if ($task->isComplete()) : ?>
-        <strke><?= $task->description; ?></strke>
-      <?php endif; ?>
-      <?= $task->description; ?>
 
-
-    </li>
-  <?php endforeach; ?>
 
 </body>
 </html>

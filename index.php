@@ -1,37 +1,10 @@
 <?php
 
-require 'functions.php';
-
-class Task {
-
-	public $description;
-	protected $completed = false;
-
-	public function __construct($description)
-	{
-			//Automatically Trigger on instantiation
-			$this->description = $description;
-	}
-
-	public function complete()
-	{
-		$this->completed = true;
-	}
-
-	public function isComplete()
-	{
-			return $this->completed;
-	}
+try {
+new PDO('mysql:host=127.0.0.1;dbname=mytodo', 'root', 'NMHouGAtpRsrsuyim2FR');
+} catch(PDException $e) {
+	die('Could not connect.');
 }
 
-$tasks = [
-		new Task('Go to the store'),
-		new Task('Finish Laracast vids'),
-		new task('Clean my room')
-];
-
-$tasks[0]->complete();
-
 require 'index.view.php';
-
 ?>
