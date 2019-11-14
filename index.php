@@ -5,7 +5,7 @@ $animals = ['dog','cat'];
 function dd($variable){
 
 			echo 'pre';
-			die(var_dump($variable))
+			die(var_dump($variable));
 			echo 'pre';
 
 }
