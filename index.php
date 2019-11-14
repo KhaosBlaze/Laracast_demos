@@ -2,7 +2,7 @@
 
 require 'functions.php';
 
-$response = bouncer($_GET['age']);
+$response = bouncer(htmlspecialchars($_GET['age']));
 
 require 'index.view.php';
 
