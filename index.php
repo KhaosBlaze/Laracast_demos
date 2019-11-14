@@ -10,7 +10,7 @@ function dd($variable){
 
 }
 
-dd($animals)
+dd($animals);
 
 // echo '<pre>';
 // die (var_dump($animals));
