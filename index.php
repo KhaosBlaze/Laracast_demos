@@ -2,13 +2,7 @@
 
 require functinos.php
 
-$animals = ['dog','cat'];
-
-dd($animals);
-
-// echo '<pre>';
-// die (var_dump($animals));
-// echo '</pre>';
+$response = bouncer($_GET['age']);
 
 require 'index.view.php';
 
