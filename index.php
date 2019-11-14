@@ -20,6 +20,11 @@ class Task {
 			$this->description = $description;
 	}
 
+	public function complete()
+	{
+		$this->completed = true;
+	}
+
 	public function isComplete()
 	{
 			return $this->completed;
@@ -27,6 +32,8 @@ class Task {
 }
 
 $task = new Task('Go to the store');
+
+$task->complete();
 
 var_dump($task->isComplete());
 
