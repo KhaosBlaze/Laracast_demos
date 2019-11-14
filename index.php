@@ -35,7 +35,7 @@ $tasks = [
 		new Task('Go to the store'),
 		new Task('Finish Laracast vids'),
 		new task('Clean my room')
-]
+];
 
 dd($tasks);
 
