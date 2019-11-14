@@ -11,12 +11,10 @@
   <?php foreach($tasks as $task) : ?>
     <li>
       <?php if ($task->isComplete()) : ?>
-        <strke>
+        <strke><?= $task->description; ?></strke>
       <?php endif; ?>
       <?= $task->description; ?>
-      <?php if ($task->isComplete()) : ?>
-        </strke>
-      <?php endif; ?>
+
 
     </li>
   <?php endforeach; ?>
