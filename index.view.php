@@ -8,7 +8,7 @@
 
 <body>
 
-  <h1><strong><?= $response; ?></strong></h1>
+
 
 </body>
 </html>
