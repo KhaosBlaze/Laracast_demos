@@ -1,14 +1,8 @@
 <?php
 
+require functinos.php
+
 $animals = ['dog','cat'];
-
-function dd($variable){
-
-			echo 'pre';
-			die(var_dump($variable));
-			echo 'pre';
-
-}
 
 dd($animals);
 
