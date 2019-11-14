@@ -13,7 +13,7 @@
       <?php if ($task->completed) : ?>
         <strke>
       <?php endif; ?>
-      <?= task->description; ?>
+      <?= $task->description; ?>
       <?php if ($task->completed) : ?>
         </strke>
       <?php endif; ?>
