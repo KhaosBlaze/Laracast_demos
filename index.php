@@ -31,11 +31,13 @@ class Task {
 	}
 }
 
-$task = new Task('Go to the store');
+$tasks = [
+		new Task('Go to the store'),
+		new Task('Finish Laracast vids'),
+		new task('Clean my room')
+]
 
-$task->complete();
-
-var_dump($task->isComplete());
+dd($tasks);
 
 require 'index.view.php';
 
