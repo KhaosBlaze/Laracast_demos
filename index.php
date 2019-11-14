@@ -30,7 +30,7 @@ $tasks = [
 		new task('Clean my room')
 ];
 
-dd($tasks);
+$tasks[0]->complete();
 
 require 'index.view.php';
 
