@@ -1,6 +1,6 @@
 <?php
 
-require functinos.php
+require 'functions.php';
 
 $response = bouncer($_GET['age']);
 
