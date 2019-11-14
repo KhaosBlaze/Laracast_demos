@@ -20,11 +20,15 @@ class Task {
 			$this->description = $description;
 	}
 
+	public function isComplete()
+	{
+			return $this->completed;
+	}
 }
 
 $task = new Task('Go to the store');
 
-dd($task);
+var_dump($task->isComplete());
 
 require 'index.view.php';
 
