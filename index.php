@@ -1,12 +1,11 @@
 <?php
 
+$query = require 'boostrap.php'
+
 require 'class.Task.php';
-require 'functions.php';
-require 'database/Connection.php';
 
-$pdo = Connection::make();
 
-$tasks = fetchAllTasks($pdo);
+$tasks = $query->selectAll('todos', 'Task');
 
 require 'index.view.php';
 ?>
