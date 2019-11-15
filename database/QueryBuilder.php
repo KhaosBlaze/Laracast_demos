@@ -4,7 +4,7 @@ class QueryBuilder
 {
   protected $pdo;
 
-  public fucntion __construct($pdo)
+  public function __construct($pdo)
   {
     $this->pdo = $pdo;
   }
