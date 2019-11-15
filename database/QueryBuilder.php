@@ -9,11 +9,13 @@ class QueryBuilder
     $this->pdo = $pdo;
   }
 
-  public function selectAll($table){
-    $statement = $this->pdo->prepare('select * from ${table}');
+  public function selectAll($table, $type){
+    $statement = $this->pdo->prepare("select * from {$table}");
 
     $statement-> execute();
 
-    return $statement->fetchALL(PDO::FETCH_CLASS);
+    vardump($statement)
+
+    return $statement->fetchALL(PDO::FETCH_CLASS, $type);
   }
 }
