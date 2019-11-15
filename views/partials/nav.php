@@ -1,8 +1,9 @@
+<? $dir = $app['directory']?>
 <nav>
   <ul>
-    <li><a href="/">Homet</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/about/culture">About our Culture</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><a href="<?= $dir; ?>/">Homet</a></li>
+    <li><a href="<?= $dir; ?>/about">About</a></li>
+    <li><a href="<?= $dir; ?>/about/culture">About our Culture</a></li>
+    <li><a href="<?= $dir; ?>/contact">Contact</a></li>
   </ul>
 </nav>
