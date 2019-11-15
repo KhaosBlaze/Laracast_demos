@@ -27,7 +27,7 @@ class QueryBuilder
       ':'.implode(', :', array_keys($data))
     );
 
-    var_da
+    die
 
     try{
       $submission = $this->pdo->prepare($sql);
