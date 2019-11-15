@@ -2,12 +2,11 @@
 
 $query = require 'core/bootstrap.php';
 
+$router = new Router;
 
-$routes = [
-	'' => 'controllers/index.php',
-	'about' => 'controllers/about.php',
-	'about/culture' => 'controllers/about-culture.php',
-	'contact'=> 'contact.php'
+require 'routes.php';
 
-]
+require $router->direct(trim($_SERVER['REQUEST_URI'], '/'));
+
+
 ?>
