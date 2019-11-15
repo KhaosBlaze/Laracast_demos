@@ -1,7 +1,10 @@
 <?php require 'partials/head.php'; ?>
-  <?php if($submission) : ?>
-    <h1>Your Submission was successful</h1>
-  <?php endif ?>
+
+<?php foreach($names as $name) : ?>
+  <li>
+    <?= $name; ?>
+  </li>
+<?php endforeach; ?>
   <h1>Submit Your Name</h1>
 
   <form method="POST" action="/Laracast/names">
