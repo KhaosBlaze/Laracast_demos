@@ -8,6 +8,6 @@ require 'core/class.Task.php';
 require 'core/class.Router.php';
 require 'core/class.Request.php';
 
-return new QueryBuilder(
+$app['database'] =  new QueryBuilder(
   Connection::make($app['config']['database'])
 );
