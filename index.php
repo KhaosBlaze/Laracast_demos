@@ -5,11 +5,7 @@ require 'functions.php';
 
 $pdo = connectToDb();
 
-$statement = $pdo->prepare('select * from todos');
-
-$statement-> execute();
-
-$tasks = $statement->fetchALL(PDO::FETCH_CLASS, 'Task');
+$tasks = fetchAllTasks($pdo)
 
 require 'index.view.php';
 ?>
