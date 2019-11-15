@@ -1,6 +1,6 @@
 <?php
 
-$query = require 'boostrap.php';
+$query = require 'bootstrap.php';
 
 require 'class.Task.php';
 
