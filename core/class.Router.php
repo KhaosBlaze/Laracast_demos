@@ -15,7 +15,7 @@ class Router
       return $this->routes[$uri];
     }
 
-    throw new Exception('No route defined for this URI');
+    throw new Exception('No route defined for the URI');
   }
 
 }
