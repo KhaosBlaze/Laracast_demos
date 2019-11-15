@@ -17,7 +17,7 @@ class QueryBuilder
     return $statement->fetchALL(PDO::FETCH_CLASS);
   }
 
-  public function submitName($table, $data)
+  public function insert($table, $data)
   {
 
     $sql = sprintf(
@@ -26,6 +26,8 @@ class QueryBuilder
       implode(', ', array_keys($data)),
       ':'.implode(', :', array_keys($data))
     );
+
+    var_da
 
     try{
       $submission = $this->pdo->prepare($sql);
