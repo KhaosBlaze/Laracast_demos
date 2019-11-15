@@ -2,7 +2,7 @@
 
 <?php foreach($names as $name) : ?>
   <li>
-    <?= $name; ?>
+    <?= $name->name; ?>
   </li>
 <?php endforeach; ?>
   <h1>Submit Your Name</h1>
