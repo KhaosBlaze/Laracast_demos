@@ -2,7 +2,7 @@
 
   <h1>Submit Your Name</h1>
 
-  <form method="GET" action="/Laracast/names">
+  <form method="POST" action="/Laracast/names">
     <input name="name"></input>
     <button type="submit"></button>
   </form>
