@@ -5,7 +5,7 @@ require 'functions.php';
 
 $pdo = connectToDb();
 
-$tasks = fetchAllTasks($pdo)
+$tasks = fetchAllTasks($pdo);
 
 require 'index.view.php';
 ?>
