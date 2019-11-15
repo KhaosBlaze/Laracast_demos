@@ -1,5 +1,5 @@
 <?php
 
-$names = $app['dataabse']->selectAll('users', 'string');
+$names = $app['database']->selectAll('users');
 
 require 'views/submit.view.php';
