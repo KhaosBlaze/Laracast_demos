@@ -1,6 +1,6 @@
 <?php
 
-$config = require 'config.php'
+$config = require 'config.php';
 require 'database/QueryBuilder.php';
 require 'database/Connection.php';
 
