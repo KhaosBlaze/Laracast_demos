@@ -4,4 +4,4 @@ $app['database']->insert('names', [
   'name' => $_POST['name']
 ]);
 
-require 'submit.view.php';
+require 'views/submit.view.php';
