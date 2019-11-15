@@ -1,16 +1,15 @@
 <?php
 
-try {
-	$pdo = new PDO('mysql:host=localhost;dbname=mytodo', 'root', 'NMHouGAtpRsrsuyim2FR');
-} catch(PDException $e) {
-	die($e->getMessage());
-}
+require 'class.Task.php';
+require 'functions.php';
+
+$pdo = connectToDb();
 
 $statement = $pdo->prepare('select * from todos');
 
 $statement-> execute();
 
-$tasks = $statement->fetchALL(PDO::FETCH_OBJ);
+$tasks = $statement->fetchALL(PDO::FETCH_CLASS, 'Task');
 
 require 'index.view.php';
 ?>
