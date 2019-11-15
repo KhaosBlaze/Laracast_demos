@@ -1,4 +1,7 @@
-<? $dir = $app['directory']?>
+<?php
+  $config = require 'config.php';
+  $dir = $config['directory'];
+?>
 <nav>
   <ul>
     <li><a href="<?= $dir; ?>/">Homet</a></li>
