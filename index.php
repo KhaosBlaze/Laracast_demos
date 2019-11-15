@@ -1,13 +1,13 @@
 <?php
 
-
-require 'class.Task.php';
-$query = require 'bootstrap.php';
-
-require 'functions.php';
+$query = require 'core/bootstrap.php';
 
 
-$tasks = $query->selectAll('todos', 'Task');
+$routes = [
+	'' => 'controllers/index.php',
+	'about' => 'controllers/about.php',
+	'about/culture' => 'controllers/about-culture.php',
+	'contact'=> 'contact.php'
 
-require 'index.view.php';
+]
 ?>

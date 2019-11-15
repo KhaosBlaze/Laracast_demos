@@ -8,6 +8,7 @@
 
 <body>
 
+
   <?php foreach($tasks as $task) : ?>
     <li>
       <?php if ($task->completed) : ?>
