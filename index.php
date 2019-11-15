@@ -1,7 +1,7 @@
 <?php
 
 
-require 'class.Task.php'
+require 'class.Task.php';
 $query = require 'bootstrap.php';
 
 require 'functions.php';
