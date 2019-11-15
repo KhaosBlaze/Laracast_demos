@@ -1,6 +1,8 @@
 <?php
 
-$app['database']->submitName(htmlspecialchars($_POST['name']));
+$app['database']->insert('name', [
+  'names' => $_POST['name']
+]);
 $submission = true;
 
-require 'submit.view.php'
+require 'submit.view.php';

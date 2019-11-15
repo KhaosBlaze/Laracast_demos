@@ -17,11 +17,22 @@ class QueryBuilder
     return $statement->fetchALL(PDO::FETCH_CLASS, $type);
   }
 
-  public function submitName($data)
+  public function submitName($table, $data)
   {
-    $submission = $this->pdo->prepare(
-      "insert into names (name) values ($data);"
+
+    $sql = sprintf(
+      'insert into %s (%s) values (%s)',
+      $table,
+      implode(', ', array_keys($data),
+      ':'.implode(', :', array_keys($data)
     );
-    $submission->execute();
+
+    try{
+      $submission = $this->pdo->prepare($sql);
+      $submission->execute($data);
+    } catch (Exception $e){
+      die('Whoops; Something went wrong in the insert');
+    }
+
   }
 }
