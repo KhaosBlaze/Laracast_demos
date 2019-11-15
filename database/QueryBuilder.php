@@ -1,5 +1,7 @@
 <?php
 
+require 'class.Task.php';
+
 class QueryBuilder
 {
   protected $pdo;
