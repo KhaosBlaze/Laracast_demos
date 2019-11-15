@@ -19,11 +19,7 @@ function bouncer($age){
 }
 
 function connectToDb(){
-	try {
-		return $pdo = new PDO('mysql:host=localhost;dbname=mytodo', 'root', 'NMHouGAtpRsrsuyim2FR');
-	} catch(PDException $e) {
-		die($e->getMessage());
-	}
+
 }
 
 function fetchAllTasks($pdo){
