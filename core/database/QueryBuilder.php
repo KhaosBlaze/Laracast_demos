@@ -23,8 +23,8 @@ class QueryBuilder
     $sql = sprintf(
       'insert into %s (%s) values (%s)',
       $table,
-      implode(', ', array_keys($data),
-      ':'.implode(', :', array_keys($data)
+      implode(', ', array_keys($data)),
+      ':'.implode(', :', array_keys($data))
     );
 
     try{
