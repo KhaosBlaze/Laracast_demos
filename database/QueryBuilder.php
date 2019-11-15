@@ -14,8 +14,6 @@ class QueryBuilder
 
     $statement-> execute();
 
-    vardump($statement)
-
     return $statement->fetchALL(PDO::FETCH_CLASS, $type);
   }
 }
