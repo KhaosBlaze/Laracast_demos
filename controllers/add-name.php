@@ -1,3 +1,6 @@
 <?php
 
-var_dump($_SERVER);
+$app['database']->submitName(htmlspecialchars($_POST['name']));
+$submission = true;
+
+require 'submit.view.php'
