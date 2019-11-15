@@ -1,10 +1,8 @@
 <?php
 
-$router->define([
-	'' => 'controllers/index.php',
-	'about' => 'controllers/about.php',
-	'about/culture' => 'controllers/about-culture.php',
-	'contact'=> 'controllers/contact.php',
-	'submit' => 'controllers/submit.php',
-	'names' => 'controllers/add-name.php'
-]);
+$router->get('', 'controllers/index.php');
+$router->get('', 'controllers/about.php');
+$router->get('', 'controllers/about-culture.php');
+$router->get('', 'controllers/contact.php');
+$router->get('', 'controllers/submit.php');
+$router->post('names', 'controllers/add-name.php');
