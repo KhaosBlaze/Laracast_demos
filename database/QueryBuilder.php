@@ -1,7 +1,5 @@
 <?php
 
-require 'class.Task.php';
-
 class QueryBuilder
 {
   protected $pdo;
@@ -11,11 +9,11 @@ class QueryBuilder
     $this->pdo = $pdo;
   }
 
-  public function selectAll($table, $intoClass){
+  public function selectAll($table){
     $statement = $this->pdo->prepare('select * from ${table}');
 
     $statement-> execute();
 
-    return $statement->fetchALL(PDO::FETCH_CLASS, $intoClass);
+    return $statement->fetchALL(PDO::FETCH_CLASS);
   }
 }
