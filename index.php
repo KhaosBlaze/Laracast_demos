@@ -7,7 +7,7 @@ $query = require 'bootstrap.php';
 require 'functions.php';
 
 
-$tasks = $query->selectAll('todos', 'Task');
+$tasks = $query->selectAll('todos');
 
 dd($tasks);
 
