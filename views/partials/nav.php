@@ -1,6 +1,5 @@
 <?php
-  $config = require 'config.php';
-  $dir = $config['directory'];
+  $dir = App::get('config')['directory'];
 ?>
 <nav>
   <ul>
