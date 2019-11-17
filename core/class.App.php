@@ -14,6 +14,6 @@ class App
     if(! array_key_exists($key, $static_registry)){
       throw new Exception("No {$key} is configured within the registry")
     }
-    return static::registry[$key]
+    return static::registry[$key];
   }
 }
